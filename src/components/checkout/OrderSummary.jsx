@@ -1,5 +1,5 @@
 import OrderItem from "./OrderItem";
-import styles from "./OrderSummary.module.css";
+import styles from "./orderSummary.module.css";
 
 const OrderSummary = ({cartitems,cartTotal,tax}) => {
 
