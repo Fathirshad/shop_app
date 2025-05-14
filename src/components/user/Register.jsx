@@ -27,7 +27,7 @@ const Register = () => {
         setError(null);
         setSuccess(null);
 
-        axios.post('http://localhost:8000/api/register/', formData)
+        axios.post('https://shop-yivv.onrender.com/api/register/', formData)
             .then(res => {
                 console.log('User registered:', res.data);
                 setSuccess('Registration successful! Redirecting to login...');
