@@ -17,7 +17,7 @@ if(loading){
 
 
 
-if(cartitems.lenght < 1){
+if(cartitems.length < 1){
   return (<div className="alert alert-primary my-5" role="alert">
     You haven't added any item to your cart.
   </div>

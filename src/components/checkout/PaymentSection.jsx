@@ -27,7 +27,7 @@ const PaymentSection = () => {
                 console.log(res.data);
                 setLoading(false);
                 if (res.data.approval_url) {
-                    window.location.href = res.data.approval_url; // ✅ fixed this line
+                    window.location.href = res.data.approval_url; 
                 } else {
                     console.error("Approval URL not received");
                 }

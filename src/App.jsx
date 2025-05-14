@@ -12,6 +12,7 @@ import ProductedRoute from "./components/ui/ProductedRoute"
 import {AuthProvider} from "./context/AuthContext"
 import UserProfilePage from "./components/user/UserProfilePage"
 import PaymentStatusPage from "./components/payment/PaymentStatusPage"
+import Register from "./components/user/Register"
 
 
 const App = () => {
@@ -46,11 +47,32 @@ const App = () => {
         <ProductedRoute>
         <CheckoutPage />
         </ProductedRoute>} />
-      <Route path="login" element={<LoginPage />}/>
+      <Route path="login" element={<LoginPage />}/> 
+
+
+      <Route path="register/" element={<Register />}/> 
+
+
+
       <Route path="profile" element={ <UserProfilePage/>}/>
+
+
+
+
+
       <Route path="*" element={<NotFoundPage/>} />
       <Route path="payment-status" element={<PaymentStatusPage setNumberCartItems={setNumberCartItems}/>}/>
       </Route>
+
+
+
+      {/* <Route path="/" element={<HomeloginPage />} /> 
+      <Route path="/login" element={<AuthPage />} />  {/* The login/signup page */}
+       */
+
+
+
+
     </Routes>
     </BrowserRouter>
     </AuthProvider>
